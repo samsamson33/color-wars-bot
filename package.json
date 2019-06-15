@@ -8,5 +8,12 @@
   },
   "keywords": [],
   "author": "samsamson33#0913",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "discord-akairo": "^8.0.0-beta.8",
+    "discord.js": "github:discordjs/discord.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
 }
