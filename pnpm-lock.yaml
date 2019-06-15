@@ -1,6 +1,7 @@
 dependencies:
   discord-akairo: 8.0.0-beta.8
   discord.js: github.com/discordjs/discord.js/1bec28bd8105aa09f43492491be9dd9cc7f7d701
+  jsonblob: 1.0.1
 devDependencies:
   eslint: 5.16.0
 lockfileVersion: 5
@@ -89,6 +90,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=
+  /axios/0.18.1:
+    dependencies:
+      follow-redirects: 1.5.10
+      is-buffer: 2.0.3
+    dev: false
+    resolution:
+      integrity: sha512-0BfJq4NSfQXd+SkFdrvFbG7addhYSBA2mQwISr46pD6E5iqkWg02RAs8vyTT/j0RTnoYmeXauBuSv1qKwR179g==
   /balanced-match/1.0.0:
     dev: true
     resolution:
@@ -166,6 +174,12 @@ packages:
       node: '>=4.8'
     resolution:
       integrity: sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ==
+  /debug/3.1.0:
+    dependencies:
+      ms: 2.0.0
+    dev: false
+    resolution:
+      integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   /debug/4.1.1:
     dependencies:
       ms: 2.1.2
@@ -370,6 +384,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-R+H8IZclI8AAkSBRQJLVOsxwAoHd6WC40b4QTNWIjzAa6BXOBfQcM587MXDTVPeYaopFNWHUFLx7eNmHDSxMWg==
+  /follow-redirects/1.5.10:
+    dependencies:
+      debug: 3.1.0
+    dev: false
+    engines:
+      node: '>=4.0'
+    resolution:
+      integrity: sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   /form-data/2.3.3:
     dependencies:
       asynckit: 0.4.0
@@ -471,6 +493,12 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-MmL624rfkFt4TG9y/Jvmt8vdmOo836U7Y0Hxr2aFk3RelZEGX4Igk0KabWrcaaZaTv9uzglOqWh1Vly+FAWAXA==
+  /is-buffer/2.0.3:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-U15Q7MXTuZlrbymiz95PJpZxu8IlipAp4dtS3wOdgPXx3mqBnslrWU14kxfHB+Py/+2PVKSr37dMAgM2A4uArw==
   /is-fullwidth-code-point/2.0.0:
     dev: true
     engines:
@@ -505,6 +533,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
+  /jsonblob/1.0.1:
+    dependencies:
+      axios: 0.18.1
+    dev: false
+    resolution:
+      integrity: sha512-s+t4+yZkYfuMMaHtPs0qzUoefB8Rmasj7LYikwT7vXk9hEmX4Rp3isZJ2mrCCDC9SJgLVmNVfORt5vcP81N0DQ==
   /levn/0.3.0:
     dependencies:
       prelude-ls: 1.1.2
@@ -555,6 +589,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
+  /ms/2.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
   /ms/2.1.2:
     dev: true
     resolution:
@@ -651,6 +689,15 @@ packages:
       ffmpeg-static: ^2.4.0
       node-opus: ^0.3.1
       opusscript: ^0.0.6
+    peerDependenciesMeta:
+      ffmpeg-binaries:
+        optional: true
+      ffmpeg-static:
+        optional: true
+      node-opus:
+        optional: true
+      opusscript:
+        optional: true
     resolution:
       integrity: sha512-KCu3SlT1EtS0lvF74NGLSTzr5jrkRajE9n+S2jnUvvdiN5SpjsGj0/HgR1QK9+985Yv8cxjwZnpFRaj+SimDGA==
   /progress/2.0.3:
@@ -903,9 +950,11 @@ packages:
       zlib-sync: ^0.1.4
       zucc: ^0.1.0
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/discordjs/discord.js/tar.gz/1bec28bd8105aa09f43492491be9dd9cc7f7d701'
     version: 12.0.0-dev
 specifiers:
   discord-akairo: ^8.0.0-beta.8
   discord.js: 'github:discordjs/discord.js'
   eslint: ^5.16.0
+  jsonblob: ^1.0.1
